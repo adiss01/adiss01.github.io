@@ -150,12 +150,6 @@ $(window).load(function() {
         }
     };
 });  
-  
-var x = window.matchMedia("(max-width: 1000px)")
-myFunction(x) 
-x.addListener(myFunction)
-
-
 
 setInterval(() => {
     if ($(window).scrollTop() > -1 && ($(window).scrollTop() < 1000)) { 
