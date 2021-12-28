@@ -372,6 +372,16 @@ nav ul li a {
     }
 }
 
+@media screen and (max-width: 517px) {
+    body, html {
+        font-family: 'Poppins', sans-serif;
+        margin: auto;
+        padding: 0%;
+        background-color: white;
+        width: fit-content;
+    }
+}
+
 .testimonial {
 	position: relative;
 	overflow: hidden;
