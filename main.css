@@ -573,6 +573,7 @@ button:hover {
     font-size: 10px;
     color: rgb(175, 175, 175);
     padding-right: 35%;
+    margin-top: 1%;
 }
 
 #boost {
@@ -583,11 +584,11 @@ button:hover {
 .etkinlik, .info {
     position: inherit;
     transition: 0.2s;
-    margin: 150px;
+    margin: 60px;
     color: #b4b4b5;
     font-size: 12.5px;
     font-weight: 600;
-    margin-left: -24.5%;
+    margin-left: -4.5%;
     padding-bottom: 3.5%;
     border-bottom: 2px solid transparent;
 }
