@@ -173,7 +173,7 @@ $(window).load(function() {
         var age =  new Date() - new Date("2006/06/19");
         age /= 31536000000
         $('.year-title').html(`${age.toFixed(1)}`);
-        $('.title-of-year').html(`${age.toFixed(8)}`);
+        $('.title-of-year').html(`${age.toPrecision(10)}`);
     },1000)
 });
 
