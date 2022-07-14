@@ -86,7 +86,7 @@ $(window).load(function() {
         if (user.listening_to_spotify) {
             $(".artist-name").text(user.spotify.artist + ' tarafından')
             $(".music-name").text(user.spotify.song)
-            $(".album-name").text(user.spotify.album.large_text + ' albümünde')
+            $(".album-name").text(user.spotify.album + ' albümünde')
             $(".main-status-image").attr("src", `${user.spotify.album_art_url}`);
             $('.etkinlik').fadeIn('fast');
 
