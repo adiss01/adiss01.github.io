@@ -152,11 +152,11 @@ $(window).load(function() {
 });  
 
 setInterval(() => {
-    if ($(window).scrollTop() > -1 && ($(window).scrollTop() < 882)) { 
+    if ($(window).scrollTop() > -1 && ($(window).scrollTop() < 660)) { 
         $('.two').removeClass('activebar');
         $('.three').removeClass('activebar');
         $('.one').addClass('activebar');
-    }else if ($(window).scrollTop() > 882 && ($(window).scrollTop() < 1100)) {
+    }else if ($(window).scrollTop() > 660 && ($(window).scrollTop() < 1100)) {
         $('.one').removeClass('activebar');
         $('.three').removeClass('activebar');
         $('.two').addClass('activebar');
@@ -165,6 +165,7 @@ setInterval(() => {
         $('.two').removeClass('activebar');
         $('.three').addClass('activebar');
     }
+    console.log($(window).scrollTop())
 }, 0);
 
 
