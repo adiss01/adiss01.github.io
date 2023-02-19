@@ -152,15 +152,15 @@ $(window).load(function() {
 });  
 
 setInterval(() => {
-    if ($(window).scrollTop() > -1 && ($(window).scrollTop() < 1000)) { 
+    if ($(window).scrollTop() > -1 && ($(window).scrollTop() < 882)) { 
         $('.two').removeClass('activebar');
         $('.three').removeClass('activebar');
         $('.one').addClass('activebar');
-    }else if ($(window).scrollTop() > 1000 && ($(window).scrollTop() < 1550)) {
+    }else if ($(window).scrollTop() > 882 && ($(window).scrollTop() < 1100)) {
         $('.one').removeClass('activebar');
         $('.three').removeClass('activebar');
         $('.two').addClass('activebar');
-    }else if ($(window).scrollTop() >= 1550) {
+    }else if ($(window).scrollTop() >= 1100) {
         $('.one').removeClass('activebar');
         $('.two').removeClass('activebar');
         $('.three').addClass('activebar');

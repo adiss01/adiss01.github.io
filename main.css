@@ -27,65 +27,6 @@
     transition: all 0.5s ease;
 }
 
-[aria-label]{
-  position: relative;
-  text-decoration: none;
-}
-
-[aria-label]::before{
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  /* top: -999; */
- 
-}
-
-[aria-label]:hover::before{
-  content: attr(aria-label);
-  background-color: #222;
-  border-radius: 3px;
-  text-shadow: 0 0 5px #000;
-  white-space: nowrap;
-  color: #fff;
-  opacity: 1;
-  pointer-events: all;
-  padding: 6px 12px;
-  overflow: hidden;
-  top: unset;
-}
-
-[aria-label]::after{
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  opacity: 0;
-  position: absolute;
-}
-
-[aria-label]:hover::after{
-  z-index: 100;
-  opacity: 1;
-  pointer-events: all;
-}
-
-[aria-label]:is([data-tooltip="top"])::before{
-    bottom: 100%;
-    left: 0%;
-    margin-bottom: 20px;
-}
-
-[aria-label]:is([data-tooltip="top"])::after{
-    bottom: 100%;
-    left: 40%;
-    margin-bottom: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #222;
-}
 
 *{
     text-decoration: none;
@@ -171,7 +112,7 @@ nav ul li a {
 
 .mainpage {
     position: inherit;
-    height: 850px;
+    height: 600px;
 }
 
 
@@ -467,7 +408,7 @@ nav ul li a {
     margin-right: auto;
     margin-left: auto;
     width: 500px;
-    height: 550px;
+    height: 560px;
     background-color: #18191c;
     border-radius: 15px;
     color: white;
@@ -513,16 +454,16 @@ nav ul li a {
 .button {
     position: relative;
     float: right;
-    bottom: 30px
+    bottom: 24px
 }
 
 button {
     position: relative;
     font-family: Discord;
-    background-color: #3ba55d;
-    color: white;
+    background-color: #379e57;
+    color: rgb(235, 227, 227);
     border:none;
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 9px;
     width: 85px;
     height: 25px;
@@ -562,8 +503,8 @@ button:hover {
 .nickname {
     position: relative;
     font-weight: 600;
-    left: -113px;
-    bottom: -15px;
+    left: -105px;
+    bottom: -5px;
     font-size: 20px;
 }
 
@@ -588,7 +529,7 @@ button:hover {
     color: #b4b4b5;
     font-size: 12.5px;
     font-weight: 600;
-    margin-left: -4.5%;
+    margin-left: -7%;
     padding-bottom: 3.5%;
     border-bottom: 2px solid transparent;
 }
@@ -600,7 +541,6 @@ button:hover {
 
 .main-body-buttons {
     position: relative;
-    bottom: -19px;
     
 }
 
@@ -621,21 +561,30 @@ button:hover {
 #hr1 {
     position: relative;
     font-size: 12px;
-    width: 100%;
+    width: 95.6%;
     height: 1px;
     background-color: #25262b;
-    bottom: -20px;
+    left: 9px;
+    /* bottom: -20px; */
 }
 
 #hr2 {
     position: relative;
-    bottom: -85px;
+    bottom: -55px;
     font-size: 12px;
     height: 1px;
     background-color: #25262b;
-    width: 97%;
-    margin-left: 0.7%;
+    margin-right: 0.2vh;
+    width: 98.7%;
+    /* margin-left: 0.7%; */
     
+}
+
+.background-fade {
+    background-color: rgba(0, 0, 0, 0.651);
+    margin: 0vh 2vh;
+    /* margin-right: 5vh; */
+    border-radius: 7px;
 }
 
 button:active {
@@ -644,24 +593,29 @@ button:active {
 
 .almezinyarragi17cm {
     position: relative;
-    left: 8px;
-    bottom: 30px;
+    left: 10px;
+    bottom: 25px;
+    background-color: #0c1013;
+    z-index: 100;
+    margin-left: 25.3%;
+    margin-right: 55.5%;
+    border-radius: 7px;
 }
 
 .about-me {
     position: relative;
     display: block;
-    bottom: -22px;
+    /* bottom: 7px; */
     font-weight: 500;
     text-align: start;
-    padding-left: 20px;
-    font-size: 12px;
+    padding-left: 12px;
+    font-size: 8px;
     color: #b4b4b5;
     overflow:scroll;
     overflow-x: hidden;
-    height: 180px;
-    width: 95.5%;
-    margin: 0;
+    height: 200px;
+    /* width: 95.5%; */
+    margin-right: 0.2vh;
 }
 .about-me-hover::-webkit-scrollbar-track{
     background-color: transparent !important;
@@ -670,17 +624,19 @@ button:active {
     background-color: transparent !important;
 }
 .about-me-hover::-webkit-scrollbar-thumb{
-    background-color: rgb(32, 34, 37) !important;
+    background-color: rgb(37, 38, 41) !important;
 }
 .about-me-non-hover::-webkit-scrollbar-thumb{
-    background-color: #18191c !important;
+    background-color: #18191c00 !important;
 }
 #about-you::-webkit-scrollbar-track{
 	border-radius: 10px;
 }
 
 #about-you::-webkit-scrollbar{
-	width: 5px;
+    position: relative;
+	width: 4px;
+    /* left: 2vh; */
 }
 
 #about-you::-webkit-scrollbar-thumb{
@@ -693,9 +649,6 @@ button:active {
     height: -25px;
 }
 
-.githubio:hover {
-    text-decoration: underline;
-}
 
 .connectedAccount-2Jb-Z0, .connectedAccounts-QlRa4m {
     display: -webkit-box;
@@ -722,15 +675,16 @@ button:active {
     align-items: center;
     border-radius: 3px;
     margin-top: 20px;
-    padding: 8px 14px 8px 8px;
+    padding: 8px 8px 8px 8px;
     width: 190px;
     /* border: 1px solid hsla(0,0%,100%,0.06); */
-    background-color: #202225;
+    /* background-color: #202225; */
+    border: 1px solid #18191c !important;
 }
 
 .connectedAccountIcon-3_EQqg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
@@ -753,7 +707,7 @@ button:active {
 }
 
 .connectedAccountName-E1KzaT {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800;
     margin-left: 10px;
     -webkit-user-select: text;
@@ -770,6 +724,7 @@ button:active {
 
 .connectedAccountVerifiedIcon-2cA82O {
     margin: 0 5px;
+    /* height: 5px; */
 }
 
 .flowerStarContainer-3zDVtj {
@@ -807,15 +762,20 @@ button:active {
     justify-content: center;
     pointer-events: none;
 }
-
-.connectedAccountOpenIcon-E5wGF4 {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
+.connectedAccountOpenIcon-OngaxI {
     width: 18px;
     height: 18px;
     color: var(--interactive-normal);
     display: block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(deg);
 }
+
+/* .right-1dJ0yM {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+} */
+
 svg[AttributesStyle] {
     width: 24;
     height: 24;
@@ -827,6 +787,7 @@ svg:not(:root) {
 .anchorUnderlineOnHover-2ESHQB:hover {
     color: white;
 }
+
 
 html.disable-high-contrast * {
     forced-color-adjust: none;
@@ -853,21 +814,21 @@ svg[AttributesStyle] {
 }
 
 .main-status-image {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: relative;
-    height: 90px;
-    width: 90px;
-    margin-left: 17px;
+    height: 70px;
+    width: 70px;
+    margin-left: 21px;
 }
 
 /* contact-spotify-tmb */
 
 .timeBarActivityFeed-24_oBt, .timeBarProfile-10b-fm {
     position: relative;
-    margin-top: -27px;
+    margin-top: -10px;
     width: 40%;
-    padding-left: 118px;
-    bottom: -27px;
+    padding-left: 90px;
+    bottom: -3px;
 }
 
 .bar-3urHkF, .barInner-3NDaY_ {
@@ -921,7 +882,7 @@ svg[AttributesStyle] {
     line-height: 12px;
 }
 .size12-3R0845 {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .mesaj-gonder{
